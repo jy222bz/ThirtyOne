@@ -25,11 +25,11 @@ namespace ThirtyOne.Validators
         /// <summary>
         /// It checks whether the string only contains letters and numbers and no strange charcters.
         /// </summary>
-        /// <param name="flightNr"></param>
+        /// <param name="name"></param>
         /// <returns>bool</returns>
-        public bool IsValidName(string flightNr)
+        public bool IsValidName(string name)
         {
-            return Regex.IsMatch(flightNr, @"^[a-zA-Z]+$");
+            return Regex.IsMatch(name, @"^[a-zA-Z]+$");
         }
     }
 }
