@@ -4,9 +4,9 @@ namespace ThirtyOne.Models
 {
     public class Dice
     {
+        private readonly Random random = new Random();
         public int Roll()
         {
-            Random random = new Random();
             return random.Next(1, 7);
         }
     }
