@@ -5,6 +5,10 @@ using ThirtyOne.Logger;
 
 namespace ThirtyOne.ViewHandlers
 {
+    /// <summary>
+    /// This is a class for handling the thelist view..
+    /// Author: Jacob Yousif
+    /// </summary>
     public class ViewScoreManager
     {
         /// <summary>

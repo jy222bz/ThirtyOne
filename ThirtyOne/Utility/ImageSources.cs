@@ -1,7 +1,16 @@
 ﻿namespace ThirtyOne.Utility
 {
+    /// <summary>
+    /// This is a class for the Images' Paths.
+    /// Author: Jacob Yousif
+    /// </summary>
     public class ImageSources
     {
+       
+        /// <summary>
+        /// It returns an array of the images' paths.
+        /// </summary>
+        /// <returns>string[]</returns>
         public static string[] GetSources()
         {
             string[] paths = new string[6];

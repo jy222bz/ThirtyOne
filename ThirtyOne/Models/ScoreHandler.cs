@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using ThirtyOne.Args;
 
 namespace ThirtyOne.Models
@@ -11,8 +10,7 @@ namespace ThirtyOne.Models
     /// The options are 12-4 and LOW, where LOW represents the dices that are below the value of four.
     /// This class implements Parcelable to serialize it.
     /// It provides a method that returns result; the option that was chosen for the calculation and the score.
-    /// Source: Jacob Yousif from previous work.
-    /// Author: Jacob Yousif
+    /// Ref: Jacob Yousif.
     /// </summary>
     public class ScoreHandler
     {

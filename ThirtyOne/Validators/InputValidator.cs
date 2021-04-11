@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace ThirtyOne.Validators
 {
@@ -23,9 +20,9 @@ namespace ThirtyOne.Validators
         }
 
         /// <summary>
-        /// It checks whether the string only contains letters and numbers and no strange charcters.
+        /// It checks whether the string only contains letters.
         /// </summary>
-        /// <param name="name"></param>
+        /// <param name="name">The name to be validated.</param>
         /// <returns>bool</returns>
         public bool IsValidName(string name)
         {

@@ -68,6 +68,7 @@ namespace ThirtyOne
             result_window.Items.Clear();
             result_window.IsEnabled = true;
             throw_btn.IsEnabled = true;
+            throw_btn.Visibility = Visibility.Visible;
             for (int index = 0; index < paths.Length; ++index)
             {
                 images[index].Source = new BitmapImage(new Uri(paths[index], UriKind.Relative));
@@ -152,6 +153,7 @@ namespace ThirtyOne
             if (game.IsGameOver())
             {
                 throw_btn.IsEnabled = false;
+                throw_btn.Visibility = Visibility.Hidden;
                 result_label.Content = "Total score: " + game.GetTotal();
                 HandleScores(new ScoreArgs(username, game.GetTotal()), true);
             }
