@@ -33,7 +33,6 @@ namespace ThirtyOne.Models
         /// </summary>
         private ScoreHandler scoreHandler = new ScoreHandler();
 
-
         /// <summary>
         /// It checks whether the game is over.
         /// </summary>
@@ -94,6 +93,15 @@ namespace ThirtyOne.Models
         public bool IsRoundOver()
         {
             return throwCounter == 3;
+        }
+
+        /// <summary>
+        /// The next roll number.
+        /// </summary>
+        /// <returns>int</returns>
+        public int GetNextRollNumber()
+        {
+            return throwCounter + 1;
         }
 
         /// <summary>

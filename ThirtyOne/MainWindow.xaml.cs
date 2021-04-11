@@ -64,7 +64,7 @@ namespace ThirtyOne
         /// </summary>
         private void Init()
         {
-            result_label.Content = "Total";
+            result_label.Content = "Next is Roll No:" + game.GetNextRollNumber().ToString() + " and Round No: " + (game.GetCurrentRound() + 1).ToString();
             result_window.Items.Clear();
             result_window.IsEnabled = true;
             throw_btn.IsEnabled = true;
@@ -150,6 +150,7 @@ namespace ThirtyOne
                 game.SetRound();
                 EnableBoxes(false);
             }
+            result_label.Content = "Next is Roll No:" + game.GetNextRollNumber().ToString() + " and Round No: " + (game.GetCurrentRound() + 1).ToString();
             if (game.IsGameOver())
             {
                 throw_btn.IsEnabled = false;
