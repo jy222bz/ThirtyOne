@@ -227,5 +227,16 @@ namespace ThirtyOne
                 username_label.Content = "Hello " + username;
             }
         }
+
+        /// <summary>
+        /// It showes the guide.
+        /// </summary>
+        /// <param name="sender">The sender object.</param>
+        /// <param name="e">The event.</param>
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            GuideWindow form = new GuideWindow();
+            form.Show();
+        }
     }
 }
