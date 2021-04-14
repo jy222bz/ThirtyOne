@@ -59,7 +59,7 @@
         </ListView>
         <Label Foreground="#FFFBF9F9" x:Name="result_listView" FontFamily="Georgia, serif"  Content="The Current Game Results" HorizontalAlignment="Left" Margin="668,846,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.541" Width="194" FontSize="14"/>
         <Menu Background="CornflowerBlue" Foreground="#FFFBF9F9"   HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="128">
-            <MenuItem Header="Guide" Click="MenuItem_Click"  Height="33" Width="225" >
+            <MenuItem Header="Guide" FontFamily="Georgia, serif" Click="MenuItem_Click"  Height="33" Width="225" >
             </MenuItem>
         </Menu>
     </Grid>

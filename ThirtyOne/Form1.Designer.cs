@@ -1,10 +1,7 @@
 ﻿
-using System.Drawing;
-using System.Windows.Forms;
-
 namespace ThirtyOne
 {
-    partial class GuideWindow
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +29,7 @@ namespace ThirtyOne
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuideWindow));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
@@ -60,7 +57,7 @@ namespace ThirtyOne
             this.Controls.Add(this.richTextBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.Name = "Form1";
-            this.Text = "Help";
+            this.Text = "Game Guide";
             this.ResumeLayout(false);
 
         }

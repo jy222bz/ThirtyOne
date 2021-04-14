@@ -235,7 +235,7 @@ namespace ThirtyOne
         /// <param name="e">The event.</param>
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            GuideWindow form = new GuideWindow();
+            Form1 form = new Form1();
             form.Show();
         }
     }

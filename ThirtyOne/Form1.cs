@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ThirtyOne
 {
-    public partial class GuideWindow : Form
+    public partial class Form1 : Form
     {
-        public GuideWindow()
+        public Form1()
         {
             InitializeComponent();
         }
