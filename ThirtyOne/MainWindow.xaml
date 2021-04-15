@@ -50,7 +50,7 @@
             <MenuItem Header="Guide" FontFamily="Georgia, serif" Click="MenuItem_Click"  Height="33" Width="225" >
             </MenuItem>
         </Menu>
-        <Label  FontFamily="Georgia, serif" Foreground="#FFFBF9F9" Content="Username:" HorizontalAlignment="Left" Margin="484,246,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="1.434,0.586"/>
+        <Label  FontFamily="Georgia, serif" Foreground="#FFFBF9F9" Content="Name:" HorizontalAlignment="Left" Margin="484,246,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="1.434,0.586"/>
     </Grid>
 </Window>
 
