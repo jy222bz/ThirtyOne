@@ -5,63 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ThirtyOne"
         mc:Ignorable="d"
-       Title="ThirtyOne" Background="CornflowerBlue" ResizeMode="NoResize" Height="1250" Width="1440.267">
+       Title="ThirtyOne" Background="CornflowerBlue" ResizeMode="NoResize" Height="600" Width="900">
 
     <Grid>
         <CheckBox x:Name="cBox1" HorizontalAlignment="Left" Margin="76,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.951,0.731" />
-        <CheckBox x:Name="cBox2" Content="" HorizontalAlignment="Left" Margin="276,94,0,0" VerticalAlignment="Top"  RenderTransformOrigin="1.001,0.665"   />
-        <CheckBox x:Name="cBox3" Content="" HorizontalAlignment="Left" Margin="476,94,0,0" VerticalAlignment="Top"  RenderTransformOrigin="-4.155,2.519" />
-        <CheckBox x:Name="cBox4" Content="" HorizontalAlignment="Left" Margin="76,333,0,0" VerticalAlignment="Top"  />
-        <CheckBox x:Name="cBox5" Content="" HorizontalAlignment="Left" Margin="276,333,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.253,0.533"  />
-        <CheckBox x:Name="cBox6" Content="" HorizontalAlignment="Left" Margin="476,333,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.35,1.725" />
-        <Image Stretch="Fill" x:Name="iBox1" HorizontalAlignment="Left" Height="100" Margin="76,133,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.54,0.44"/>
-        <Image Stretch="Fill" x:Name="iBox2" HorizontalAlignment="Left" Height="100" Margin="276,133,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image Stretch="Fill" x:Name="iBox3" HorizontalAlignment="Left" Height="100" Margin="476,133,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image Stretch="Fill" x:Name="iBox4" HorizontalAlignment="Left" Height="100" Margin="76,370,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.54,0.44"/>
-        <Image Stretch="Fill" x:Name="iBox5" HorizontalAlignment="Left" Height="100" Margin="276,370,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.54,0.44"/>
-        <Image Stretch="Fill" x:Name="iBox6" HorizontalAlignment="Left" Height="100" Margin="476,370,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.54,0.44"/>
-        <Button Foreground="#FFFBF9F9" FontFamily="Georgia, serif" Content="New Game" Click="OnPlayGame" HorizontalAlignment="Left" Margin="441,1012,0,0" VerticalAlignment="Top" Width="153" Height="52" Background="#FF90C99B" RenderTransformOrigin="0.649,2.562"/>
-        <Button Foreground="#FFFBF9F9" x:Name="throw_btn" FontFamily="Georgia, serif" Content="Roll" Click="OnThrowClick" HorizontalAlignment="Left" Margin="441,813,0,0" VerticalAlignment="Top" Background="#FF90C99B" RenderTransformOrigin="-0.505,0.653" Width="153" Height="46"/>
-        <ListView x:Name="score_window"  Margin="668,78,37,471" FontFamily="Georgia, serif">
-            <ListView.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <RotateTransform/>
-                </TransformGroup>
-            </ListView.RenderTransform>
+        <CheckBox x:Name="cBox2" Content="" HorizontalAlignment="Left" Margin="213,94,0,0" VerticalAlignment="Top"  RenderTransformOrigin="1.001,0.665"   />
+        <CheckBox x:Name="cBox3" Content="" HorizontalAlignment="Left" Margin="350,94,0,0" VerticalAlignment="Top"  RenderTransformOrigin="-4.155,2.519" />
+        <CheckBox x:Name="cBox4" Content="" HorizontalAlignment="Left" Margin="76,200,0,0" VerticalAlignment="Top"  />
+        <CheckBox x:Name="cBox5" Content="" HorizontalAlignment="Left" Margin="213,200,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.253,0.533"  />
+        <CheckBox x:Name="cBox6" Content="" HorizontalAlignment="Left" Margin="350,200,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.35,1.725" />
+        <Image Stretch="Fill" x:Name="iBox1" HorizontalAlignment="Left" Height="50" Margin="76,115,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.54,0.44"/>
+        <Image Stretch="Fill" x:Name="iBox2" HorizontalAlignment="Left" Height="50" Margin="213,115,0,0" VerticalAlignment="Top" Width="50"/>
+        <Image Stretch="Fill" x:Name="iBox3" HorizontalAlignment="Left" Height="50" Margin="350,115,0,0" VerticalAlignment="Top" Width="50"/>
+        <Image Stretch="Fill" x:Name="iBox4" HorizontalAlignment="Left" Height="50" Margin="76,219,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.54,0.44"/>
+        <Image Stretch="Fill" x:Name="iBox5" HorizontalAlignment="Left" Height="50" Margin="213,219,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.54,0.44"/>
+        <Image Stretch="Fill" x:Name="iBox6" HorizontalAlignment="Left" Height="50" Margin="350,219,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.54,0.44"/>
+        <Button Foreground="#FFFBF9F9" FontFamily="Georgia, serif" Content="New Game" Click="OnPlayGame" HorizontalAlignment="Left" Margin="76,404,0,0" VerticalAlignment="Top" Width="114" Height="46" Background="#FF90C99B" RenderTransformOrigin="0.649,2.562"/>
+        <Button Foreground="#FFFBF9F9" x:Name="throw_btn" FontFamily="Georgia, serif" Content="Roll" Click="OnThrowClick" HorizontalAlignment="Left" Margin="274,404,0,0" VerticalAlignment="Top" Background="#FF90C99B" RenderTransformOrigin="-0.505,0.653" Width="126" Height="46"/>
+        <ListView x:Name="score_window"   FontFamily="Georgia, serif" Margin="484,41,31.667,331">
             <ListView.View>
                 <GridView >
-                    <GridViewColumn Header="Player" Width="280" DisplayMemberBinding="{Binding Username}" />
-                    <GridViewColumn Header="Score" Width="290" DisplayMemberBinding="{Binding Score}" />
+                    <GridViewColumn Header="Player" Width="150" DisplayMemberBinding="{Binding Username}" />
+                    <GridViewColumn Header="Score" Width="180" DisplayMemberBinding="{Binding Score}" />
                 </GridView>
             </ListView.View>
         </ListView>
-        <Label FontSize="14" Foreground="#FFFBF9F9" FontFamily="Georgia, serif" Content="Previous Scores" HorizontalAlignment="Left" Margin="668,39,0,0" VerticalAlignment="Top" Width="134"/>
-        <Label FontSize="16" Foreground="#FFFBF9F9" x:Name="result_label" FontFamily="Georgia, serif" Content="Total" HorizontalAlignment="Left" Margin="100,828,0,0" VerticalAlignment="Top"  Width="283" Height="44"/>
-        <TextBox x:Name="playername" HorizontalAlignment="Left" FontFamily="Georgia, serif" Padding="2" Margin="668,770,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="321" Height="22"/>
-        <Button Background="#FF90C99B" x:Name="set_playername_btn" Click="SetUsernameClick" FontFamily="Georgia, serif" Content="Set Player Name" HorizontalAlignment="Left" Margin="1084,768,0,0" VerticalAlignment="Top" Height="24" Width="303" RenderTransformOrigin="0.703,0.46" Foreground="#FFFBF9F9"/>
-        <Label FontSize="14" Foreground="#FFFBF9F9" x:Name="username_label" FontFamily="Georgia, serif" Content="Anonymous Player" HorizontalAlignment="Left" Margin="213,39,0,0" VerticalAlignment="Top" Width="134"/>
-        <ListView x:Name="result_window"  Margin="668,887,37,42" FontFamily="Georgia, serif" IsEnabled="False">
-            <ListView.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <RotateTransform/>
-                </TransformGroup>
-            </ListView.RenderTransform>
+        <Label FontSize="12" Foreground="#FFFBF9F9" FontFamily="Georgia, serif" Content="Previous Scores" HorizontalAlignment="Left" Margin="484,13,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label FontSize="12" Foreground="#FFFBF9F9" x:Name="result_label" FontFamily="Georgia, serif" Content="Total" HorizontalAlignment="Left" Margin="76,327,0,0" VerticalAlignment="Top"  Width="283" Height="44"/>
+        <TextBox x:Name="playername" HorizontalAlignment="Left" FontFamily="Georgia, serif" Padding="3" Margin="566,246,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Height="28"/>
+        <Button Background="#FF90C99B" x:Name="set_playername_btn" Click="SetUsernameClick" FontFamily="Georgia, serif" Content="Set" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="28" Width="72" RenderTransformOrigin="0.703,0.46" Foreground="#FFFBF9F9" Margin="782,246,0,0"/>
+        <Label FontSize="12" Foreground="#FFFBF9F9" x:Name="username_label" FontFamily="Georgia, serif" Content="Anonymous Player" HorizontalAlignment="Left" Margin="133,25,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.056,0.257"/>
+        <ListView x:Name="result_window" FontFamily="Georgia, serif" IsEnabled="False" Margin="484,327,31.667,0" Height="221" VerticalAlignment="Top">
             <ListView.View>
                 <GridView >
-                    <GridViewColumn Header="Round Number" Width="150" DisplayMemberBinding="{Binding RoundNumber}" />
-                    <GridViewColumn Header="Option" Width="150" DisplayMemberBinding="{Binding Option}" />
-                    <GridViewColumn Header="Total" Width="155" DisplayMemberBinding="{Binding Total}" />
-                    <GridViewColumn Header="Combination" Width="190" DisplayMemberBinding="{Binding Combination}" />
+                    <GridViewColumn Header="Round Number" Width="100" DisplayMemberBinding="{Binding RoundNumber}" />
+                    <GridViewColumn Header="Option" Width="60" DisplayMemberBinding="{Binding Option}" />
+                    <GridViewColumn Header="Total" Width="60" DisplayMemberBinding="{Binding Total}" />
+                    <GridViewColumn Header="Combination" Width="120" DisplayMemberBinding="{Binding Combination}" />
                 </GridView>
             </ListView.View>
         </ListView>
-        <Label Foreground="#FFFBF9F9" x:Name="result_listView" FontFamily="Georgia, serif"  Content="The Current Game Results" HorizontalAlignment="Left" Margin="668,846,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.541" Width="194" FontSize="14"/>
+        <Label Foreground="#FFFBF9F9" x:Name="result_listView" FontFamily="Georgia, serif"  Content="The Current Game Results" HorizontalAlignment="Left" Margin="484,296,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,0.541" Width="194" FontSize="12"/>
         <Menu Background="CornflowerBlue" Foreground="#FFFBF9F9"   HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="128">
             <MenuItem Header="Guide" FontFamily="Georgia, serif" Click="MenuItem_Click"  Height="33" Width="225" >
             </MenuItem>
         </Menu>
+        <Label  FontFamily="Georgia, serif" Foreground="#FFFBF9F9" Content="Username" HorizontalAlignment="Left" Margin="484,246,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="1.434,0.586"/>
     </Grid>
 </Window>
 

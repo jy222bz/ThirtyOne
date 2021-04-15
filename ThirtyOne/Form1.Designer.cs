@@ -37,6 +37,7 @@ namespace ThirtyOne
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.richTextBox1.BulletIndent = 1;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Uighur", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.richTextBox1.Location = new System.Drawing.Point(28, 30);
