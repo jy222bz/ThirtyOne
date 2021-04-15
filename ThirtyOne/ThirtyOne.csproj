@@ -130,5 +130,15 @@
   <ItemGroup>
     <Resource Include="Diagram\Thirtyone.png" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="TestImages\Change user name.png" />
+    <Resource Include="TestImages\Invalid name again.png" />
+    <Resource Include="TestImages\invalid name.png" />
+    <Resource Include="TestImages\played as Jay.png" />
+    <Resource Include="TestImages\results with name on.png" />
+    <Resource Include="TestImages\start.png" />
+    <Resource Include="TestImages\valid name.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
