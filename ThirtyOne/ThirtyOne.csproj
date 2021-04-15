@@ -60,12 +60,6 @@
     <Compile Include="Exceptions\BaseException.cs" />
     <Compile Include="Exceptions\FileDeserializationException.cs" />
     <Compile Include="Exceptions\FileSerializationException.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Models\Dice.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\ScoreHandler.cs" />
@@ -109,9 +103,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
