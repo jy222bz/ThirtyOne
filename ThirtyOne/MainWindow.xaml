@@ -30,9 +30,9 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Label FontSize="12" Foreground="#FFFBF9F9" FontFamily="Georgia, serif" Content="Previous Scores" HorizontalAlignment="Left" Margin="484,13,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label FontSize="12" Foreground="#FFFBF9F9" FontFamily="Georgia, serif" Content="Previous Games" HorizontalAlignment="Left" Margin="484,13,0,0" VerticalAlignment="Top" Width="194"/>
         <Label FontSize="12" Foreground="#FFFBF9F9" x:Name="result_label" FontFamily="Georgia, serif" Content="Total" HorizontalAlignment="Left" Margin="76,327,0,0" VerticalAlignment="Top"  Width="283" Height="44"/>
-        <TextBox x:Name="playername" HorizontalAlignment="Left" FontFamily="Georgia, serif" Padding="3" Margin="566,246,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Height="28"/>
+        <TextBox x:Name="playername" HorizontalAlignment="Left" FontFamily="Georgia, serif" Padding="4" Margin="566,246,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Height="28"/>
         <Button Background="#FF90C99B" x:Name="set_playername_btn" Click="SetUsernameClick" FontFamily="Georgia, serif" Content="Set" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="28" Width="72" RenderTransformOrigin="0.703,0.46" Foreground="#FFFBF9F9" Margin="782,246,0,0"/>
         <Label FontSize="12" Foreground="#FFFBF9F9" x:Name="username_label" FontFamily="Georgia, serif" Content="Anonymous Player" HorizontalAlignment="Left" Margin="133,25,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.056,0.257"/>
         <ListView x:Name="result_window" FontFamily="Georgia, serif" IsEnabled="False" Margin="484,327,31.667,0" Height="221" VerticalAlignment="Top">
